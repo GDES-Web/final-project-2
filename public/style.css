@@ -1,18 +1,294 @@
-/* Error: expected "+", "-", "*", "/", or ")".
- *     ,
- * 216 |     height: calc(100vh – 50px);
- *     |                        ^
- *     '
- *   src/components/_nav-bar-wit-img.scss 216:24  @import
- *   src/style.scss 10:9                          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "+", "-", "*", "/", or ")".\a     \2577 \a 216 \2502      height: calc(100vh \2013  50px);\a     \2502                         ^\a     \2575 \a   src/components/_nav-bar-wit-img.scss 216:24  @import\a   src/style.scss 10:9                          root stylesheet';
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Colors */
+/* Typography */
+/* Layout */
+/* Media Queries */
+.breadcrumbs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.breadcrumbs ul li {
+  display: inline-block;
+}
+.breadcrumbs ul li a {
+  color: #333;
+  text-decoration: none;
+}
+.breadcrumbs ul li a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs ul li span {
+  color: #666;
+}
+.breadcrumbs ul li:not(:last-child)::after {
+  content: ">";
+  margin: 0 8px;
+  color: #666;
+}
+
+@media screen and (max-width: 767px) {
+  .breadcrumbs ul li {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .breadcrumbs ul li:not(:last-child)::after {
+    content: none;
+  }
+  .breadcrumbs ul li a {
+    display: block;
+    padding: 8px 0;
+    border-top: 1px solid #ddd;
+  }
+  .breadcrumbs ul li span {
+    display: block;
+    padding: 8px 0;
+    border-top: 1px solid #ddd;
+    color: #666;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .card {
+  width: calc(50% - 1rem);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container .card h2 {
+  margin-top: 0;
+}
+.container .card p {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+  .container .card {
+    width: 100%;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.container p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .container h1 {
+    font-size: 2.5rem;
+  }
+  .container p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+  .container p {
+    font-size: 0.9rem;
+  }
+}
+
+.product-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+.product-card .product-info {
+  width: 100%;
+  padding: 24px;
+  background-color: #fff;
+}
+.product-card .product-info .product-title {
+  margin-top: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+.product-card .product-info .product-author {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+}
+.product-card .product-info .product-price {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #f00;
+}
+.product-card .product-info .add-to-cart {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  background-color: #f00;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.product-card .product-info .add-to-cart:hover {
+  background-color: #c00;
+}
+@media screen and (max-width: 767px) {
+  .product-card {
+    flex-direction: column;
+  }
+  .product-card .product-info {
+    padding: 16px;
+  }
+  .product-card .product-info .product-title {
+    font-size: 24px;
+  }
+  .product-card .product-info .product-author {
+    font-size: 14px;
+  }
+  .product-card .product-info .product-price {
+    font-size: 20px;
+  }
+  .product-card .product-info .add-to-cart {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.product-card .product-image {
+  width: 45%;
+  margin-right: 5%;
+}
+.product-card .product-image img {
+  width: 100%;
+}
+.product-card .product-details {
+  width: 50%;
+}
+.product-card .product-details .product-title {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.product-card .product-details .product-description {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.product-card .product-details .product-price {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.product-card .product-details .add-to-cart {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .product-card {
+    flex-direction: column;
+  }
+  .product-card .product-image {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .product-card .product-details {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
