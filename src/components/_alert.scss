@@ -1,0 +1,35 @@
+.alert {
+  display: flex;
+  align-items: center;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+  
+  .alert-text {
+    flex: 1;
+    margin: 0;
+  }
+  
+  .alert-close {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 16px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: flex-start;
+    
+    .alert-close {
+      margin-left: 0;
+      margin-top: 16px;
+    }
+  }
+}

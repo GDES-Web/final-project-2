@@ -1,0 +1,19 @@
+.product-banner {
+  background-color: #ffcc00;
+  padding: 16px;
+  text-align: center;
+  
+  .banner-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .banner-text {
+      font-size: 14px;
+    }
+  }
+}

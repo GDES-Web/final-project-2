@@ -1,0 +1,29 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  .gallery-item {
+    position: relative;
+    width: 33.33%;
+    padding: 10px;
+    transition: filter 0.5s ease;
+    
+    &:hover {
+      filter: grayscale(0%);
+    }
+    
+    img {
+      width: 100%;
+      height: auto;
+      filter: grayscale(100%);
+      transition: filter 0.5s ease;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .gallery-item {
+      width: 50%;
+    }
+  }
+}

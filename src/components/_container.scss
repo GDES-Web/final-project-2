@@ -1,0 +1,41 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+    
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    padding: 0 0.5rem;
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}

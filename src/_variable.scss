@@ -28,3 +28,15 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
+
+// Navbar variables
+$nav-height: 80px;
+$nav-bg-color: rgba(0, 0, 0, 0.5);
+$nav-text-color: #fff;
+$nav-text-hover-color: #ccc;
+$nav-logo-img: url('../images/logo.png');
+$nav-hamburger-color: #fff;
+// .some-class {
+//   color: $primary-color;
+//   background-color: lighten($primary-color, 20%);
+// }

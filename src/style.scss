@@ -1,9 +1,11 @@
 @import './reset';
-@import './variables';
+@import './variable';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css';
-@import './components/navigation3';
+// @import './components/navigation3';
+@import './components/breadcrumbs';
+@import './components/container-with-two-cards';
+@import './components/container';
+@import './components/product-card';
+@import './components/product-card-left-right';
+@import './components/nav-bar-wit-img';
 
-
-html {
-  background-color: $color;
-}
