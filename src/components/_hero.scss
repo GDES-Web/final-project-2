@@ -5,7 +5,7 @@
 }
 
 .btn {
-  background-color: hsl(322, 100%, 66%);
+  background-color: hsl(222, 59%, 77%);
   border: 0; 
   outline: none; 
   padding: 15px 50px; 
@@ -19,7 +19,7 @@
   text-decoration: none;
 }
 header {
-  background: url("images/hero-bg.svg") hsl(193, 100%, 96%);  
+  background: url("../../public/imgs/") hsl(193, 100%, 96%);  
 }
 
 nav {
@@ -30,7 +30,7 @@ nav {
 }
 
 nav img {
-  width: 200px;  
+  width: 50px;  
 }
 
 .signup-btn {
@@ -38,7 +38,7 @@ nav img {
   color: #00252e; 
 }
 .signup-btn:hover{
-  background-color: #FF52BF;
+  background-color: gray;
   color: #fff;
 }
 .hero {
@@ -64,7 +64,7 @@ nav img {
   margin-bottom: 30px;
 }
 .hero .get-started:hover{
-  background-color: #EE52CC;
+  background-color: rgb(210, 210, 210);
 }
 .hero .right {
   width: 50%;  
