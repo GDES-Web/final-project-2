@@ -1,0 +1,50 @@
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  margin: 10px 0;
+}
+
+.checklist input[type="checkbox"] {
+  display: none;
+}
+
+.checklist label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.checklist input[type="checkbox"]:checked + label:before {
+  content: "\2714";
+  font-size: 18px;
+  color: #fff;
+  background-color: #69D2e7;
+  border-color: #69D2e7;
+}
+
+.checklist label {
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .checklist label:before {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+
+  .checklist label {
+    font-size: 16px;
+  }
+}
