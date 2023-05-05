@@ -1,0 +1,59 @@
+$form-bg: #f5f5f5;
+$form-input-bg: #fff;
+$form-input-border: 1px solid #ccc;
+$form-input-radius: 3px;
+$form-input-focus-border: 1px solid #66afe9;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: $form-bg;
+  padding: 20px;
+  border-radius: $form-input-radius;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    label {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      background-color: $form-input-bg;
+      border: $form-input-border;
+      border-radius: $form-input-radius;
+      padding: 10px;
+      font-size: 16px;
+
+      &:focus {
+        outline: none;
+        border: $form-input-focus-border;
+      }
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+    }
+  }
+
+  .button {
+    background-color: #66afe9;
+    color: #fff;
+    border: none;
+    border-radius: $form-input-radius;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #5cb8e6;
+    }
+  }
+}
