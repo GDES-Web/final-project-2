@@ -1,0 +1,90 @@
+$primary-color: #0084ff;
+
+.top-nav {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  .logo {
+    font-size: 24px;
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .tabs {
+    flex: 1;
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin-right: 10px;
+        a {
+          text-decoration: none;
+          color: $primary-color;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    input[type="text"] {
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 2px $primary-color;
+      }
+    }
+    button[type="submit"] {
+      background-color: $primary-color;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+  .user-actions {
+    margin-left: 10px;
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .logo,
+    .user-actions {
+      margin: 10px 0;
+    }
+    
+    .search {
+      margin: 10px 0;
+    }
+  }
+}
