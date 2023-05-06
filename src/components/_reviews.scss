@@ -1,0 +1,50 @@
+/* Reviews section */
+.reviews {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  
+  .reviews-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .review {
+    margin-bottom: 40px;
+    
+    .review-author {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .review-text {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+  
+  /* Media query for responsive design */
+  @media screen and (min-width: 768px) {
+    .reviews {
+      padding: 60px 40px;
+      
+      .reviews-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+      }
+      
+      .review {
+        margin-bottom: 60px;
+        
+        .review-author {
+          font-size: 20px;
+        }
+        
+        .review-text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

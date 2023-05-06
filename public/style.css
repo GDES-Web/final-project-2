@@ -846,6 +846,89 @@ aside a:hover {
   color: #f90;
 }
 
+.shipping-details {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+}
+.shipping-details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.shipping-details form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shipping-details form .form-group {
+  flex: 1 1 50%;
+}
+.shipping-details form .form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.shipping-details form .form-group input[type=text], .shipping-details form .form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .shipping-details {
+    padding: 10px;
+  }
+  .shipping-details h2 {
+    font-size: 20px;
+  }
+  .shipping-details form .form-group {
+    flex: 1 1 100%;
+  }
+}
+
+/* Reviews section */
+.reviews {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  /* Media query for responsive design */
+}
+.reviews .reviews-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.reviews .review {
+  margin-bottom: 40px;
+}
+.reviews .review .review-author {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.reviews .review .review-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+  .reviews .reviews {
+    padding: 60px 40px;
+  }
+  .reviews .reviews .reviews-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .reviews .reviews .review {
+    margin-bottom: 60px;
+  }
+  .reviews .reviews .review .review-author {
+    font-size: 20px;
+  }
+  .reviews .reviews .review .review-text {
+    font-size: 16px;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
