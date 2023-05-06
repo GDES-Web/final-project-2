@@ -535,7 +535,7 @@ footer input[type=email] {
 }
 
 footer button[type=submit] {
-  background-color: #ff9800;
+  background-color: #0084ff;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -814,6 +814,38 @@ aside a:hover {
     margin-top: 20px;
   }
 }
+.product-collections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+.product-collections .collection {
+  width: calc(33.33% - 30px);
+  margin: 15px;
+}
+.product-collections .collection a {
+  display: block;
+  text-align: center;
+}
+.product-collections .collection a img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.product-collections .collection a .collection-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.product-collections .collection a .collection-title:hover {
+  color: #f90;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
