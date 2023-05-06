@@ -1,0 +1,49 @@
+horizontal
+
+.product-details {
+  margin-top: 20px;
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 16px;
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font-size: 20px;
+    }
+    
+    p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    
+    ul {
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+}
