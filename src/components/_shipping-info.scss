@@ -1,0 +1,31 @@
+.shipping-return-info {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  
+  .info-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .info-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .shipping-return-info {
+      padding: 10px;
+      
+      .info-title {
+        font-size: 16px;
+      }
+      
+      .info-text {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1040,6 +1040,95 @@ aside a:hover {
   }
 }
 
+.shipping-return-info {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.shipping-return-info .info-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.shipping-return-info .info-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .shipping-return-info .shipping-return-info {
+    padding: 10px;
+  }
+  .shipping-return-info .shipping-return-info .info-title {
+    font-size: 16px;
+  }
+  .shipping-return-info .shipping-return-info .info-text {
+    font-size: 14px;
+  }
+}
+
+.customer-support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .customer-support {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+.customer-support .support-info {
+  text-align: center;
+  margin-right: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .customer-support .support-info {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+.customer-support .support-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.customer-support .support-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.customer-support .support-options {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .customer-support .support-options {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.customer-support .support-options .support-option {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .customer-support .support-options .support-option {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.customer-support .support-options .support-option i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.customer-support .support-options .support-option p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
