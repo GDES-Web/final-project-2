@@ -16,3 +16,37 @@
 @import './components/product-section';
 @import './components/best-seller-section';
 @import './components/article-section-aside';
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  $body-font-family: 'Open Sans', sans-serif;
+}
+
+/* Global Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-left: 20px; 
+}
+
+/* Global Section Styles */
+section {
+  padding: 60px 0;
+ 
+}
+
+/* Global Article Styles */
+article {
+  margin-bottom: 40px;
+  margin-left: 20px; 
+  
+}
+

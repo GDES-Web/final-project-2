@@ -503,12 +503,14 @@ footer {
 
 .footer-signup {
   max-width: 400px;
+  margin-left: 20px;
 }
 
 .footer-signup h3 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .footer-signup p {
@@ -547,6 +549,7 @@ footer button[type=submit] {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .footer-links ul,
@@ -607,12 +610,14 @@ footer button[type=submit] {
 #products h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 #products .product {
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: 20px;
   padding: 20px;
+  margin-left: 20px;
 }
 #products .product img {
   display: block;
@@ -645,6 +650,7 @@ footer button[type=submit] {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 50px 0;
+  margin-left: 20px;
 }
 .bestsellers .bestsellers-left {
   width: 50%;
@@ -802,6 +808,34 @@ aside a:hover {
   aside {
     margin-top: 20px;
   }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Global Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-left: 20px;
+}
+
+/* Global Section Styles */
+section {
+  padding: 60px 0;
+}
+
+/* Global Article Styles */
+article {
+  margin-bottom: 40px;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
