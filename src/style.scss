@@ -7,8 +7,8 @@
 @import './components/container';
 @import './components/product-card';
 @import './components/product-card-left-right';
-@import './components/nav-bar-wit-img';
-// @import './components/hero';
+// @import './components/nav-bar-wit-img';
+@import './components/hero';
 @import './components/navigation-with-search';
 @import './components/hero-ecom';
 @import './components/footer-sign-up';
@@ -24,9 +24,10 @@
 @import './components/shipping-info';
 @import './components/customer-support';
 @import './components/checkout-proccess';
-@import './components/product-card-with-color-range';
+// @import './components/product-card-with-color-range';
 @import './components/product-card-like-bn';
 @import './components/product_details';
+@import './components/product-card-left-right';
 
 
 * {
@@ -40,23 +41,23 @@ html, body {
   $body-font-family: 'Open Sans', sans-serif;
 }
 
-/* Global Container Styles */
+// /* Global Container Styles */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
   margin-left: 20px; 
 }
 
 /* Global Section Styles */
 section {
-  padding: 60px 0;
-  // margin-left: 20px; 
+  padding: 10 0;
+  margin-left: 20px; 
 }
 
 /* Global Article Styles */
 article {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   margin-left: 20px; 
   
 }

@@ -28,13 +28,15 @@ article {
 section {
   flex: 1;
   margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 8px;
   
 }
 
 aside {
   flex-basis: 30%;
   max-width: 300px;
-  background-color: light-color;
+  background-color: $light-color;
   padding: 20px;
   box-sizing: border-box;
   margin-right: 20px;
