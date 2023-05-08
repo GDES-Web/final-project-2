@@ -2,7 +2,7 @@ $primary-color: #0084ff;
 
 .hero {
   height: 500px;
-  background-image: url('https://source.unsplash.com/1600x900/?fashion');
+  background-image: url('https://source.unsplash.com/1600x900/?festival');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -10,8 +10,9 @@ $primary-color: #0084ff;
   width: 100%;
   .hero-content {
     text-align: center;
-    color: #fff;
+    color: white;
     h1 {
+    
       font-size: 48px;
       margin-bottom: 20px;
     }
@@ -20,8 +21,8 @@ $primary-color: #0084ff;
       margin-bottom: 40px;
     }
     button {
-      background-color: $primary-color;
-      color: #fff;
+      background-color: $secondary-color;
+      color: whitesmoke;
       border: none;
       border-radius: 5px;
       padding: 10px 20px;

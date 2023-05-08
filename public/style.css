@@ -552,7 +552,7 @@ nav .logo img {
 
 .hero {
   height: 500px;
-  background-image: url("https://source.unsplash.com/1600x900/?fashion");
+  background-image: url("https://source.unsplash.com/1600x900/?festival");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -561,7 +561,7 @@ nav .logo img {
 }
 .hero .hero-content {
   text-align: center;
-  color: #fff;
+  color: white;
 }
 .hero .hero-content h1 {
   font-size: 48px;
@@ -572,8 +572,8 @@ nav .logo img {
   margin-bottom: 40px;
 }
 .hero .hero-content button {
-  background-color: #0084ff;
-  color: #fff;
+  background-color: orange;
+  color: whitesmoke;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;

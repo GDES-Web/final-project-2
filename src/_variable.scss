@@ -1,8 +1,8 @@
 /* Colors */
-$primary-color: #007bff;
-$secondary-color: #6c757d;
+$primary-color: #ffc107;
+$secondary-color: orange;
 $success-color: #28a745;
-$info-color: #17a2b8;
+$info-color: #a66d0a;
 $warning-color: #ffc107;
 $danger-color: #dc3545;
 $light-color: #f8f9fa;
@@ -32,10 +32,10 @@ $breakpoint-xl: 1200px;
 // Navbar variables
 $nav-height: 80px;
 $nav-bg-color: rgba(0, 0, 0, 0.5);
-$nav-text-color: #fff;
+$nav-text-color: $primary-color;
 $nav-text-hover-color: #ccc;
 $nav-logo-img: url('../images/logo.png');
-$nav-hamburger-color: #fff;
+$nav-hamburger-color: $primary-color;
 // .some-class {
 //   color: $primary-color;
 //   background-color: lighten($primary-color, 20%);
