@@ -1566,6 +1566,30 @@ aside a:hover {
   }
 }
 
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 4rem;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+li p {
+  margin-top: 1rem;
+  font-family: system-ui;
+  text-align: center;
+}
+
+.sponsor img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: contain;
+}
+
+body {
+  padding: 3rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
