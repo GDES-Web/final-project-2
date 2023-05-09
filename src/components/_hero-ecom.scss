@@ -1,7 +1,7 @@
 $primary-color: #0084ff;
 
 .hero {
-  height: 500px;
+  height: 700px;
   background-image: url('../../public/imgs/music-festival-for\ hero.jpeg');
   // background-image: url('https://source.unsplash.com/1600x900/?festival');
   background-size: cover;
@@ -9,9 +9,11 @@ $primary-color: #0084ff;
   justify-content: center;
   align-items: center;
   width: 100%;
+  border: 0;
+  margin: 0 auto; 
   .hero-content {
     text-align: center;
-    color: orange;
+    color: rgb(187, 58, 6);
     h1 {
     
       font-size: 48px;
