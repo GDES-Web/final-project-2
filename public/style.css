@@ -102,7 +102,6 @@ nav ul li a {
 }
 
 a.active, a:hover {
-  background: white;
   border-bottom: 3px solid orange;
   border-radius: 10px;
   transition: 0.5s;
