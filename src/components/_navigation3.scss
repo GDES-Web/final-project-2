@@ -18,8 +18,8 @@ nav{
 label.logo{
   color: $primary-color;
   font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
+  line-height: 20px;
+  padding: 0 20px;
   font-weight: bold;
 }
 
@@ -41,7 +41,7 @@ nav ul li a{
   text-transform: uppercase;
 }
 a.active,a:hover{
-  // background: white;
+  background: white;
   border-bottom: 3px solid orange;
   border-radius: 10px;
   transition: .5s;
@@ -95,16 +95,16 @@ a.active,a:hover{
     font-size: 20px;
   }
   a:hover,a.active{
-    background: none;
-    color: yellow;
+    background: white;
+    color: black;
   }
   #check:checked ~ ul{
     left: 0;
   }
 }
-section{
-  background: url(bg1.jpg) no-repeat;
-  background-size: cover;
-  height: calc(100vh - 80px);
-}
+// section{
+//   background: url(bg1.jpg) no-repeat;
+//   background-size: cover;
+//   height: calc(100vh - 80px);
+// }
 

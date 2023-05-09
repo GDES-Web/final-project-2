@@ -77,8 +77,8 @@ nav {
 label.logo {
   color: #ffc107;
   font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
+  line-height: 20px;
+  padding: 0 20px;
   font-weight: bold;
 }
 
@@ -102,6 +102,7 @@ nav ul li a {
 }
 
 a.active, a:hover {
+  background: white;
   border-bottom: 3px solid orange;
   border-radius: 10px;
   transition: 0.5s;
@@ -153,19 +154,13 @@ a.active, a:hover {
     font-size: 20px;
   }
   a:hover, a.active {
-    background: none;
-    color: yellow;
+    background: white;
+    color: black;
   }
   #check:checked ~ ul {
     left: 0;
   }
 }
-section {
-  background: url(bg1.jpg) no-repeat;
-  background-size: cover;
-  height: calc(100vh - 80px);
-}
-
 .breadcrumbs ul {
   list-style: none;
   padding: 0;
@@ -240,6 +235,8 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .container h1 {
   font-size: 3rem;
@@ -400,117 +397,124 @@ section {
   }
 }
 
-nav {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  height: 60px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
 }
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-nav ul li {
-  margin: 0 10px;
-}
-nav ul li a {
-  color: orange;
-  text-decoration: none;
+
+.btn {
+  background-color: hsl(40, 87%, 57%);
+  border: 0;
+  outline: none;
+  padding: 15px 50px;
+  border-radius: 10rem;
+  color: #fff;
   font-weight: bold;
-  transition: all 0.3s ease;
+  font-family: "open sans";
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  text-decoration: none;
 }
-nav ul li a:hover {
-  color: #ff4500;
+
+header {
+  background: url("../../public/imgs/music-festival-for hero.jpeg") hsl(193, 100%, 96%);
 }
-nav ul li a.active {
-  color: #ff4500;
-}
-nav .logo {
-  height: 40px;
-  width: auto;
+
+nav {
+  padding: 50px 0 50px 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
-nav .logo img {
-  height: 100%;
-  width: auto;
+
+nav img {
+  width: 50px;
 }
-@media only screen and (max-width: 768px) {
-  nav {
-    height: auto;
-    padding: 5px;
-  }
-  nav ul {
-    flex-direction: column;
-  }
-  nav ul li {
-    margin: 10px 0;
-  }
-  nav ul li a {
-    font-size: 18px;
-  }
+
+.signup-btn {
+  background-color: #dd7c04;
+  color: #00252e;
+}
+
+.signup-btn:hover {
+  background-color: rgb(208, 112, 3);
+  color: #fff;
 }
 
 .hero {
-  height: 700px;
-  background-image: url("../../public/imgs/music-festival-for hero.jpeg");
-  background-size: cover;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  border: 0;
-  margin: 0 auto;
-}
-.hero .hero-content {
-  text-align: center;
-  color: rgb(187, 58, 6);
-}
-.hero .hero-content h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-.hero .hero-content p {
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-.hero .hero-content button {
-  background-color: orange;
-  color: whitesmoke;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-}
-.hero .hero-content button:hover {
-  background-color: #006acc;
-}
-@media (max-width: 768px) {
-  .hero {
-    height: 300px;
-  }
-  .hero .hero-content h1 {
-    font-size: 32px;
-  }
-  .hero .hero-content p {
-    font-size: 18px;
-  }
-  .hero .hero-content button {
-    font-size: 16px;
-    padding: 8px 16px;
-  }
+  justify-content: space-between;
+  padding-bottom: 70px;
 }
 
+.hero .left {
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 98%);
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.hero .get-started:hover {
+  background-color: rgb(230, 93, 8);
+}
+
+.hero .right {
+  width: 50%;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 532px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 80%;
+  }
+  /* nav mobile styles */
+  nav img {
+    width: 150px;
+  }
+  .signup-btn {
+    padding: 10px 20px;
+  }
+  .btn {
+    font-size: 0.9rem;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero .left {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero .get-started {
+    width: 80%;
+  }
+  .hero .right {
+    width: 100%;
+  }
+}
 /* Footer Styles */
 footer {
   background-color: #f7f7f7;
@@ -523,6 +527,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .footer-signup {
@@ -559,7 +564,7 @@ footer input[type=email] {
 }
 
 footer button[type=submit] {
-  background-color: #0084ff;
+  background-color: #ffc107;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -741,105 +746,6 @@ footer button[type=submit] {
     width: 100%;
   }
 }
-a {
-  color: #0084ff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Article layout styles */
-article {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-section {
-  flex: 1;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  padding: 8px;
-}
-
-aside {
-  flex-basis: 30%;
-  max-width: 300px;
-  background-color: #f8f9fa;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-right: 20px;
-}
-
-/* Section content styles */
-section h2 {
-  margin-top: 0;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-section p {
-  margin-top: 10px;
-}
-
-section .cta {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0084ff;
-  color: #fff;
-  border-radius: 4px;
-  transition: background-color 0.2s ease-in-out;
-}
-
-section .cta:hover {
-  background-color: #005ea2;
-}
-
-/* Aside content styles */
-aside h3 {
-  margin-top: 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-aside ul {
-  margin-top: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-aside li {
-  margin-bottom: 10px;
-}
-
-aside a {
-  display: block;
-  padding: 5px 10px;
-  color: #343a40;
-  border-radius: 4px;
-  transition: background-color 0.2s ease-in-out;
-}
-
-aside a:hover {
-  background-color: #0077cc;
-  color: #fff;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 767px) {
-  article {
-    flex-direction: column;
-  }
-  section {
-    margin-right: 0;
-  }
-  aside {
-    margin-top: 20px;
-  }
-}
 .product-collections {
   display: flex;
   justify-content: center;
@@ -925,7 +831,8 @@ aside a:hover {
   margin-bottom: 20px;
 }
 .reviews .review {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .reviews .review .review-author {
   font-size: 16px;
@@ -960,6 +867,9 @@ aside a:hover {
   justify-content: center;
   align-items: center;
   background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 @media only screen and (max-width: 768px) {
   .customer-support {
@@ -1238,20 +1148,7 @@ body {
   padding: 3rem;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  height: 100%;
-}
-
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
   margin-left: 20px;
 }
 

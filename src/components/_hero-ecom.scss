@@ -1,27 +1,36 @@
 $primary-color: #0084ff;
 
 .hero {
-  height: 700px;
+  // height: 700px;
   background-image: url('../../public/imgs/music-festival-for\ hero.jpeg');
   // background-image: url('https://source.unsplash.com/1600x900/?festival');
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  // width: 100%;
+  width: 100vw;
+  height: 100vh;
   border: 0;
   margin: 0 auto; 
   .hero-content {
     text-align: center;
-    color: rgb(187, 58, 6);
+    color: rgb(252, 234, 217);
+    // trying to fix overlaping problem when resizing screen
+    position: absolute;
+    // top: 50%;
+    // left: 20%;
+    // margin-top: -150px;
+
     h1 {
-    
       font-size: 48px;
       margin-bottom: 20px;
+      
     }
     p {
       font-size: 24px;
       margin-bottom: 40px;
+      
     }
     button {
       background-color: $secondary-color;
@@ -53,3 +62,14 @@ $primary-color: #0084ff;
     }
   }
 }
+// @media screen and (max-width: 568px) {
+//   .hero-content {
+//       left: 0;
+//       right: 0;
+//       margin: 0 auto;
+//       text-align: center;
+//       margin-top: 130px;
+//       position: relative;
+//       background: none;
+//     }
+// }

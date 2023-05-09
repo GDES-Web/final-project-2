@@ -5,7 +5,7 @@
 }
 
 .btn {
-  background-color: hsl(222, 59%, 77%);
+  background-color: hsl(40, 87%, 57%);
   border: 0; 
   outline: none; 
   padding: 15px 50px; 
@@ -19,7 +19,7 @@
   text-decoration: none;
 }
 header {
-  background: url("../../public/imgs/") hsl(193, 100%, 96%);  
+  background: url("../../public/imgs/music-festival-for\ hero.jpeg") hsl(193, 100%, 96%);  
 }
 
 nav {
@@ -34,11 +34,11 @@ nav img {
 }
 
 .signup-btn {
-  background-color: #fff; 
+  background-color: #dd7c04; 
   color: #00252e; 
 }
 .signup-btn:hover{
-  background-color: gray;
+  background-color: rgb(208, 112, 3);
   color: #fff;
 }
 .hero {
@@ -49,12 +49,12 @@ nav img {
 }
 
 .hero .left {
-  width: 40%; 
+  width: 100%; 
 }
 
 .hero h1 {
   font-size: 2.5rem; 
-  color: hsl(192, 100%, 9%);   
+  color: hsl(0, 0%, 98%);   
   margin-bottom: 10px;
 }
 
@@ -62,9 +62,10 @@ nav img {
   font-size: 1.2rem; 
   line-height: 1.5; 
   margin-bottom: 30px;
+  color: white;
 }
 .hero .get-started:hover{
-  background-color: rgb(210, 210, 210);
+  background-color: rgb(230, 93, 8);
 }
 .hero .right {
   width: 50%;  
