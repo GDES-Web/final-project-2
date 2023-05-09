@@ -275,6 +275,7 @@ a.active, a:hover {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .product-card img {
   width: 100%;
@@ -316,7 +317,7 @@ a.active, a:hover {
   cursor: pointer;
 }
 .product-card .product-info .add-to-cart:hover {
-  background-color: #c00;
+  background-color: rgb(227, 119, 3);
 }
 @media screen and (max-width: 767px) {
   .product-card {
@@ -377,7 +378,7 @@ a.active, a:hover {
 .product-card .product-details .add-to-cart {
   font-size: 1rem;
   padding: 10px 20px;
-  background-color: #008CBA;
+  background-color: #e38d02;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -751,7 +752,7 @@ footer button[type=submit] {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 50px 0;
+  margin: 10px 0;
 }
 .product-collections .collection {
   width: calc(33.33% - 30px);
@@ -823,6 +824,7 @@ footer button[type=submit] {
 .reviews {
   background-color: #f9f9f9;
   padding: 10px 10px;
+  margin-bottom: 20px;
   /* Media query for responsive design */
 }
 .reviews .reviews-title {
@@ -868,7 +870,7 @@ footer button[type=submit] {
   align-items: center;
   background-color: #f9f9f9;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
@@ -1054,7 +1056,7 @@ footer button[type=submit] {
 .product-card .product-details .add-to-cart {
   font-size: 1rem;
   padding: 10px 20px;
-  background-color: #008CBA;
+  background-color: #e38d02;
   color: #fff;
   border: none;
   border-radius: 4px;
