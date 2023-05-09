@@ -557,7 +557,7 @@ nav .logo img {
 
 .hero {
   height: 500px;
-  background-image: url("../../public/imgs/music-festival-for hero.jpeg");
+  background-image: url("./imgs/music-festival-for hero.jpeg");
   background-size: cover;
   display: flex;
   justify-content: center;
